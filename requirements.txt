@@ -1,0 +1,9 @@
+pip==21.1.1
+lxml==4.6.3
+setuptools==56.0.0
+Flask==1.1.2
+Flask-RESTful==0.3.8
+requests==2.25.1
+beautifulsoup4==4.9.3
+extruct==0.12.0
+gunicorn==20.1.0

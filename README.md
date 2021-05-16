@@ -20,65 +20,94 @@ Test API POST -> http://127.0.0.1:5000/CookEezy/recipeFromUrl?webUrl=https://www
   "success": true,
   "message": "Success",
   "data": {
-    "title": "Orange Cake with Semolina and Almonds",
-    "prepTime": 30,
-    "cookTime": 80,
-    "servings": 10,
-    "imageUrl": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4674336.jpg",
+    "title": "Quick Cinnamon Rolls",
+    "prepTime": 20,
+    "cookTime": 20,
+    "servings": 18,
+    "imageUrl": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F7535189.jpg",
     "instructions": [
-      "Combine chopped oranges and 1 tablespoon water in a small saucepan, cover, and cook over medium-low heat until oranges are soft and excess liquid has evaporated, about 30 minutes. Set aside to cool, about 20 minutes.",
-      "Preheat oven to 350 degrees F (175 degrees C). Line the bottom and sides of an 8-inch springform pan with parchment paper.",
-      "Place oranges in the bowl of a food processor; pulse until finely chopped.",
-      "Beat egg whites in a glass, metal, or ceramic bowl until stiff peaks form. Gradually add 1/2 cup sugar, continuing to beat for 1 more minute.",
-      "Beat egg yolks and remaining 1/2 cup sugar in a separate bowl until pale and thick, 2 to 3 minutes. Whisk in finely chopped oranges. Fold in ground almonds, semolina, vanilla extract, and fiori di Sicilia. Stir in 3 spoonfuls of whisked egg white to loosen the batter. Gently fold in remaining egg whites with a spatula or large metal spoon. Pour batter into prepared springform and level the top.",
-      "Bake in the preheated oven until cake is golden and a skewer inserted in the center comes out clean, about 50 minutes. Check cake after 20 and 30 minutes to see if it is starting to brown too quickly. Cover top lightly with aluminum foil once cake starts to brown.",
-      "Remove from oven and cool in the pan. Remove ring, peel away parchment paper and transfer cake to a serving plate. Drizzle with liqueur and dust with confectioners' sugar."
+      "Preheat oven to 400 degrees F (200 degrees C). Brush a 9-inch square baking dish with 2 tablespoons melted butter.",
+      "Whisk flour, 2 tablespoons white sugar, baking powder, and salt together in a large bowl. Work 3 tablespoons softened butter into flour mixture using your hands. Beat milk and egg together in another bowl; pour into flour-butter mixture and stir with a rubber spatula until a soft dough forms.",
+      "Turn dough out onto a floured work surface and roll dough into a 1/4-inch thick rectangle. Brush surface of dough with 2 tablespoons melted butter.",
+      "Whisk 1/2 cup white sugar, brown sugar, and cinnamon together in a small bowl. Sprinkle 1/2 of the cinnamon sugar mixture in the bottom of the prepared baking dish. Sprinkle remaining cinnamon sugar over butter-brushed dough. Roll dough around filling to form a log; cut log into 18 rolls and place rolls in the prepared baking dish.",
+      "Bake in the preheated oven until rolls are set, 20 to 25 minutes.",
+      "Beat confectioners' sugar, cream cheese, 1/4 cup softened butter, and vanilla extract together in a bowl until frosting is smooth. Top hot cinnamon rolls with cream cheese frosting."
     ],
     "ingredients": [
       {
-        "quantity": 2,
-        "type": "other",
-        "extra": "large organic oranges, scrubbed and coarsely chopped (with the skin) "
+        "quantity": 0.25,
+        "type": "cup",
+        "extra": "butter, divided "
       },
       {
-        "quantity": 5,
+        "quantity": 2,
+        "type": "cups",
+        "extra": "all-purpose flour "
+      },
+      {
+        "quantity": 2,
+        "type": "tablespoons",
+        "extra": "white sugar "
+      },
+      {
+        "quantity": 2,
+        "type": "teaspoons",
+        "extra": "baking powder "
+      },
+      {
+        "quantity": 1,
+        "type": "teaspoon",
+        "extra": "salt "
+      },
+      {
+        "quantity": 3,
+        "type": "tablespoons",
+        "extra": "butter, softened "
+      },
+      {
+        "quantity": 0.75,
+        "type": "cup",
+        "extra": "milk "
+      },
+      {
+        "quantity": 1,
         "type": "other",
-        "extra": "eggs, separated "
+        "extra": "egg "
+      },
+      {
+        "quantity": 0.5,
+        "type": "cup",
+        "extra": "white sugar "
+      },
+      {
+        "quantity": 0.5,
+        "type": "cup",
+        "extra": "brown sugar "
+      },
+      {
+        "quantity": 1,
+        "type": "tablespoon",
+        "extra": "ground cinnamon "
       },
       {
         "quantity": 1,
         "type": "cup",
-        "extra": "white sugar, divided "
+        "extra": "confectioners' sugar "
       },
       {
-        "quantity": 0.75,
-        "type": "cup",
-        "extra": "ground almonds "
+        "quantity": 4,
+        "type": "ounces",
+        "extra": "cream cheese, softened "
       },
       {
-        "quantity": 0.75,
+        "quantity": 0.25,
         "type": "cup",
-        "extra": "semolina flour "
+        "extra": "butter, softened "
       },
       {
         "quantity": 0.5,
         "type": "teaspoon",
         "extra": "vanilla extract "
-      },
-      {
-        "quantity": 0.5,
-        "type": "teaspoon",
-        "extra": "fiori di Sicilia (optional) "
-      },
-      {
-        "quantity": 3,
-        "type": "tablespoons",
-        "extra": "brandy-based orange liqueur (such as Grand Marnier®) "
-      },
-      {
-        "quantity": 0.5,
-        "type": "teaspoon",
-        "extra": "confectioners' sugar "
       }
     ]
   }

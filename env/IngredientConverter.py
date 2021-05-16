@@ -52,10 +52,25 @@ class IngredientConverter:
                     except:
                         qty = -1
             converter['quantity'] = qty
-            converter['type'] = split_data[1]
-            for k in range(2, len(split_data)):
-                extra += (split_data[k] + " ")
-            converter['extra'] = extra
+
+            if split_data[1] == "cup" \
+                    or split_data[1] == "cups" \
+                    or split_data[1] == "teaspoon" \
+                    or split_data[1] == "teaspoons" \
+                    or split_data[1] == "tablespoons" \
+                    or split_data[1] == "tablespoon" \
+                    or split_data[1] == "ounce" \
+                    or split_data[1] == "ounces":
+                converter['type'] = split_data[1]
+                for k in range(2, len(split_data)):
+                    extra += (split_data[k] + " ")
+                converter['extra'] = extra
+            else:
+                converter['type'] = "other"
+                for k in range(1, len(split_data)):
+                    extra += (split_data[k] + " ")
+                converter['extra'] = extra
+
             data.append(converter)
             extra = ""
             converter = {
@@ -65,22 +80,3 @@ class IngredientConverter:
             }
 
         return data
-
-
-print(IngredientConverter([
-    "¼ cup butter, divided",
-    "2 cups all-purpose flour",
-    "2 tablespoons white sugar",
-    "2 teaspoons baking powder",
-    "1 teaspoon salt",
-    "3 tablespoons butter, softened",
-    "¾ cup milk",
-    "1 egg",
-    "½ cup white sugar",
-    "½ cup brown sugar",
-    "1 tablespoon ground cinnamon",
-    "1 cup confectioners' sugar",
-    "4 ounces cream cheese, softened",
-    "¼ cup butter, softened",
-    "½ teaspoon vanilla extract"
-]).convert_data)

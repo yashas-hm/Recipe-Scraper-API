@@ -1,7 +1,7 @@
-from RecipeScraper import Scraper
+from env.RecipeScraper import Scraper
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
-from IngredientConverter import IngredientConverter
+from env.IngredientConverter import IngredientConverter
 
 app = Flask(__name__)
 api = Api(app)

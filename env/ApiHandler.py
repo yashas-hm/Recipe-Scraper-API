@@ -33,7 +33,7 @@ class ApiHandler(Resource):
             data['success'] = True
             data['message'] = 'Success'
             data['data'].update(scraped_data)
-            return data, 400
+            return data, 200
         except:
             data['success'] = False
             data['message'] = 'Invalid Url'

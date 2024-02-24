@@ -1,20 +1,19 @@
-# Recipe Scraper API
+# Recipe Scraper API 🍽️
 
-Simple API for fetching recipes from web using URL<br>
+Recipe Scraper API is a simple API for fetching recipes from the web using a URL.
 
-## Requirements
- - Flask 1.1.2 (pip install Flask==1.1.2)
- - recipe_scrapers (modified an original code from https://github.com/hhursev/recipe-scrapers.git) 
- - Flask_RESTful (pip install Flask-RESTful)
+## Requirements 📋
+- Flask 1.1.2 (`pip install Flask==1.1.2`)
+- Flask_RESTful (`pip install Flask-RESTful`)
 
-## End Points
-POST<br>
-API -> http://127.0.0.1:5000/CookEezy/recipeFromUrl?webUrl="PASTE_URL_HERE"><br>
+## Endpoints 🛣️
+**POST**  
+API Endpoint: `http://127.0.0.1:5000/CookEezy/recipeFromUrl?webUrl="PASTE_URL_HERE"`
+
+## Example
+`http://127.0.0.1:5000/CookEezy/recipeFromUrl?webUrl=https://www.allrecipes.com/recipe/241917/quick-cinnamon-rolls/`
 
 ### Result
-
-Test API POST -> http://127.0.0.1:5000/CookEezy/recipeFromUrl?webUrl=https://www.allrecipes.com/recipe/241917/quick-cinnamon-rolls/<br>
-
 ```json
 {
   "success": true,
@@ -113,9 +112,8 @@ Test API POST -> http://127.0.0.1:5000/CookEezy/recipeFromUrl?webUrl=https://www
   }
 }
 ```
-<br>
 
-Test API POST -> http://127.0.0.1:5000/CookEezy/recipeFromUrl?webUrl=htt<br>
+### Error Response
 
 ```json
 {
@@ -124,3 +122,5 @@ Test API POST -> http://127.0.0.1:5000/CookEezy/recipeFromUrl?webUrl=htt<br>
     "data": {}
 }
 ```
+
+Thank you [@hhursev](https://github.com/hhursev/recipe-scrapers.git) for providing base scraper function for this api.
